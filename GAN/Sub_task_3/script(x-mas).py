@@ -1,23 +1,5 @@
 '''
-Made By Rudra in Spyder, 
 
-Used Pytorch as framework and 2 simple linear layers in
-discriminator and generator instead of CNN because CNN was not 
-giving good results
-
-Don't know why but succesfully wasted enough time in learning 
-and implementing CNN (crying inside)
-
-Implemented model on MNIST dataset beacuse it was blank and white, hehehee
-Otherwise my pc would blast ..... and it was easy to plot lol
-
-Then trained my model using mathsssssss(everywhere is maths, uffff)
-
-And at end of each epoch, I generated image from a random noise which is fixed for all epochs
-
-So Enjoyyyyyy 
-
-Copyright @ Great Rudra 2025
 '''
 # %%
 import torch
