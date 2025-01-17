@@ -64,8 +64,8 @@ transforms_dataset = transforms.Compose(
     ]
 )
 
-dataset_tree = datasets.ImageFolder(root=r"D:\Coding\ML\Induction_Task\Data_2\undecorated",transform=transforms_dataset)
-dataset_xmas = datasets.ImageFolder(root=r"D:\Coding\ML\Induction_Task\Data_2\decorated",transform=transforms_dataset)
+dataset_tree = datasets.ImageFolder(root=r"D:\Induction_Task\Data_2\undecorated",transform=transforms_dataset)
+dataset_xmas = datasets.ImageFolder(root=r"D:\Induction_Task\Data_2\decorated",transform=transforms_dataset)
 
 # Hyperparameters etc.
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -127,7 +127,7 @@ for epoch in range(num_epochs):
             gen_image_num = gen_image.reshape(3,128, 128).cpu()
             gen_image_num = (gen_image_num + 1) / 2  # Rescale from [-1, 1] to [0, 1]
             gen_image_num = gen_image_num.permute(1,2,0)
-            real_image_num = real[0].reshape(3,128, 128).cpu()
+            # real_image_num = real[0].reshape(3,128, 128).cpu()
              
             # Plot the generated imageeeeee yee
             plt.subplot(1,2,1)
