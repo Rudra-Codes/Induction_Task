@@ -46,8 +46,8 @@ transforms_dataset = transforms.Compose(
     ]
 )
 
-dataset_tree = datasets.ImageFolder(root=r"D:\Induction_Task\Data_2\undecorated",transform=transforms_dataset)
-dataset_xmas = datasets.ImageFolder(root=r"D:\Induction_Task\Data_2\decorated",transform=transforms_dataset)
+dataset_tree = datasets.ImageFolder(root=r"D:\Induction_Task\Data_2\decorated",transform=transforms_dataset)
+dataset_xmas = datasets.ImageFolder(root=r"D:\Induction_Task\Data_2\undecorated",transform=transforms_dataset)
 
 # Hyperparameters etc.
 device = "cuda" if torch.cuda.is_available() else "cpu"
