@@ -125,12 +125,12 @@ for epoch in range(num_epochs):
              
             # Plot the generated imageeeeee yee
             plt.subplot(1,2,1)
-            plt.imshow(gen_image_num, cmap="gray")
+            plt.imshow(gen_image_num, cmap="Greens")
             plt.title("Generated Image")
             
             # Ploting Trained imageeee
             plt.subplot(1,2,2)
-            plt.imshow(real_image_num, cmap="gray")
+            plt.imshow(real_image_num, cmap="Greens")
             plt.title("Trained Image")
             
             plt.axis("off")
