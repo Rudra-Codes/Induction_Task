@@ -72,11 +72,15 @@ def image_processing(str_path,dimension):
   image = Image.open(str_path).convert("L")
   image_tensor = transformation(image).view([1,(dimension[0]*dimension[1])])
   return image_tensor
-TRAIN_DIR = "D:\Coding\ML\Induction_Task\Data\Train"
-# TRAIN_DIR = "D:\Coding\ML\Induction_Task\Data\Train_Images"
 
-TEST_DIR = "D:\Coding\ML\Induction_Task\Data\Test"
-# TEST_DIR = "D:\Coding\ML\Induction_Task\Data\Test_Images"
+# Directories - 
+# For Competiton - 1
+TRAIN_DIR = "D:\Induction_Task\Data\Train"  
+TEST_DIR = "D:\Induction_Task\Data\Test"
+
+# For Competiton - 2
+# TRAIN_DIR = "D:\Induction_Task\Data\Train_Images"
+# TEST_DIR = "D:\Induction_Task\Data\Test_Images"
 
 # Creating x_train
 train = pd.DataFrame()
